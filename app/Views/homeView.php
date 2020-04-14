@@ -1,3 +1,4 @@
+<?php $date = new \App\Controllers\Home()?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +14,9 @@
 <head>
 </head>
 <body>
-
 <h1 id="title">PDF Calendar</h1>
 
-<div class="fastSearch">
+<!-- <div class="fastSearch">
 <form>
     <div class="row">
         <div class="col">
@@ -55,15 +55,15 @@
     <label class="form-check-label" for="exampleCheck1">Activate From-To</label>
   </div>
 </form>
-</div>
+</div> -->
 
-<div class="month">      
+<div class="month mt-5">      
   <ul>
-    <li class="prev">&#10094;</li>
-    <li class="next">&#10095;</li>
+    <li id="prev">&#10094;</li>
+    <li id="next">&#10095;</li>
     <li>
-      <?= $currentMonth ?><br>
-      <span style="font-size:18px"><?= $currentYear ?></span>
+      <span id="userMonth"><?= $currentMonth ?></span><br>
+      <span style="font-size:18px" id="userYear"><?= $currentYear ?></span>
     </li>
   </ul>
 </div>
